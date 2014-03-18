@@ -1,4 +1,3 @@
-
 /**
  * dependencies.
  */
@@ -14,6 +13,5 @@ var before = require('before');
 
 module.exports = function(el, wrap){
   before(el, wrap);
-  el = el.firstElementChild || el;
   wrap.appendChild(el);
 };
